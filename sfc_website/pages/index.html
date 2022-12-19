@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <!-- Banner -->
+    <section id="section-home">
+      <div class="banner w-full h-screen">
+        <!-- NAVIGATION BAR -->
+        <header style="position: fixed; top: 0; z-index: 999" class="w-full">
+          <nav
+            id="navbar"
+            style="transition: 0.4s"
+            class="w-full d-flex space-between items-center"
+          >
+            <div>
+              <img id="logo" src="../images/logo.png" />
+            </div>
+            <ul style="cursor: pointer">
+              <li class="font-nunito font-sm"><a href="#section-home"/>Home</a></li>
+              <li class="font-nunito font-sm"><a href="#section-about"/>About us</a></li>
+              <li class="font-nunito font-sm"><a href="#section-mission"/>Mission & Vision</a></li>
+              <li class="font-nunito font-sm"><a href="#section-courses"/>Courses</a></li>
+              <li class="font-nunito font-sm"><a href="#section-students"/>Students</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- LOGIN -->
+        <div class="login-wrapper w-full">
+          <div class="login-container">
+            <div class="login-heading w-full font-bold">
+              <img id="logo" src="../images/logo.png" />
+              <p class="font-raleway font-sm">Sign in with your SFC CIT Account</p>
+            </div>
+
+            <div class="login-form">
+              <input
+                type="text"
+                placeholder="Username"
+                class="font-inter w-full"
+                id="username_input"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="font-inter w-full"
+                id="password_input"
+              />
+              <input type="submit" class="w-full" id="button_click" />
+
+              <div class="w-full" style="visibility: hidden; display: none">
+                <a
+                  href="/pages/admin.html"
+                  class="w-full"
+                  style="color: white; text-decoration: none"
+                  id="redirect_link"
+                  >Sign in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title w-full">
+          <span class="font-inter font-sm">COLLEGE OF INFORMATION TECHNOLOGY</span>
+          <h2 class="font-raleway font-bold">Saint Ferdinand College</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="main" id="section-about">
+      <div class="grid-2">
+        <div class="mission-vision">
+          <h2 class="font-noto font-xl">Our <br />Character</h2>
+          <p class="font-nunito font-sm" id="about-text" style="transition: 5s all;color: white;">
+            As information technology students, we are problem-solvers, innovators, and critical thinkers. We have a passion for technology and a drive to continuously learn and stay up-to-date on the latest industry trends. We are dedicated to using our skills and knowledge to make a positive impact on society through the use of technology.
+         <br>
+
+         <br>
+         We are always looking for ways to improve and expand our knowledge and skills, and we approach challenges with a can-do attitude. We value collaboration and teamwork, and we are committed to using our expertise to make a positive difference in the world through the power of technology.
+       
+          </p>
+
+         
+        
+        </div>
+
+        <div>
+          <img
+            src="../images/about.jpg"
+            style="
+              object-fit: fill;
+              border-color: #0a192f;
+             transform: translateX(65%);
+             transition: 5s all;
+            "
+            class="w-full h-full"
+            id="about-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="newsletter h-screen w-full d-grid d-grid-1fr-1fr">
+        <div></div>
+        <div class="opacity-container"></div>
+      </div>
+    </section>
+    <!-- End Banner -->
+
+    <section class="global-campus main">
+      <div
+        class="w-full d-flex flex-end items-end pillar"
+     
+      >
+        <div style="position: absolute; z-index: 99; width: 60%" class="h-full">
+          <img
+            src="../images/team.jpg"
+            style="
+              object-fit: fill;
+
+              transform: translate(-32%, -25%);
+              border-radius: 15px;
+              margin-top: 150px;
+              transition: 2s all;
+            "
+            class="w-full"
+
+            id="state-img"
+          />
+        </div>
+        <div
+          style="
+            background-color: #990000;
+            color: white;
+            padding: 50px;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 15px;
+          "
+          class="h-full d-flex flex-end items-end"
+        >
+          <h1 class="font-xl font-cormorant font-regular">
+            "We aim at inspiring our students to dream more, learn more, do
+            more, and become more in their respective journeys of life."
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="curriculum-overview main"
+      style="padding: 50px; margin: 50px 0px"
+      id="section-courses"
+    >
+      <div>
+        <div
+          class="d-flex space-between items-center flex-col"
+          style="padding: 50px 0px"
+        >
+          <h2 class="font-noto font-xl">Curriculum <br />Overview</h2>
+
+          <div style="max-width: 600px">
+            <p class="font-nunito curriculum-subtitle font-sm" style=" text-indent: 50px;">
+             Get a comprehensive overview of the field of information technology with our curriculum, covering topics ranging from computer hardware and software. Enhance your technical skills and knowledge to become a proficient IT professional.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="d-grid cards-container" id="myList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-mission">
+      <div
+        class="w-full h-screen d-grid mission_vision"
+        
+      >
+        <div>
+          <h3 class="font-xl font-noto">SFC CIT aims to</h3>
+        </div>
+
+        <div class="main">
+          <div
+            class="d-flex space-between items-center"
+            style="
+              margin: 25px 0px;
+              padding: 35px 0px;
+              border-bottom: 1px solid white;
+            "
+          >
+            <p class="font-lg">Mission</p>
+            <button
+              class="font-md"
+              style="
+                cursor: pointer;
+                border: none;
+                background-color: #990000;
+                color: white;
+              "
+              id="mission-btn"
+            >
+              -
+            </button>
+          </div>
+          <div>
+            <p
+              class="font-sm font-nunito d-flex"
+              style="line-height: 25px;"
+              id="mission"
+            >
+              To equip students with Christian values, technological knowledge,
+              systematic and technical skills in Research in Systems Analysis,
+              Software Development, Network Administration, Software Application
+              and Allied Areas of Development; To provide for continuing
+              professional growth of its faculty and staff; To utilize expertise
+              for integral community extension service.
+            </p>
+          </div>
+
+          <div
+            class="d-flex space-between items-center"
+            style="
+              margin: 25px 0px;
+              padding: 35px 0px;
+              border-bottom: 1px solid white;
+            "
+          >
+            <p class="font-lg">Vision</p>
+            <button
+              class="font-md"
+              style="
+                cursor: pointer;
+                border: none;
+                background-color: #990000;
+                color: white;
+              "
+              id="vision-btn"
+            >
+              +
+            </button>
+          </div>
+
+          <p class="font-nunito font-sm" style="line-height: 25px" id="vision">
+            Bachelor of Science in Information Technology This course which
+            prepares the students for careers as computer systems designers,
+            contractors, providers and service personnel. In addition to
+            developing programming skills in mainstream languages and higher
+            level industry standard programming languages, the core subjects of
+            this course cover the technological side of computer, network
+            systems, Internet communications, information management systems,
+            and software prototyping, and testing systems analysis and design.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-students">
+      <div>
+        <h3 class="font-xl font-noto" style="padding: 50px 50px;">OUR STUDENTS</h3>
+
+        <div
+          class="w-full d-grid"
+          style="
+            background-color: white;
+            color: #0a192f;
+            grid-template-columns: 1fr 1fr;
+            padding: 50px;
+            gap: 55px;
+            transform: translateY(50%);
+            transition: 2s all;
+          "
+          id="students-observe"
+        >
+          <div style="display: flex; flex-direction: column; gap: 55px">
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Erica Joy Dolorico</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px; ;
+              "
+              class="font-inter d-flex w-full space-between"
+            >
+              <p>Lhaira Xyries Fernando</p>
+            </div>
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Cedric Germond Malabug</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Perry Audhrey Soriano</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Brian Kenneth Vinasoy</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Christian Began</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Jetrix OJ Jimenez</p>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 55px">
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Jay Malenab</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Jovan Ali Alvarado</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Benedict Josh Baquiran</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>John Vincent Gannaban</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Nataniel Guigab</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>Von Gabrielle Mallanao</p>
+            </div>
+
+            <div
+              style="
+                border-bottom: 1px solid black;
+                padding: 20px 0px;
+                font-weight: 500;
+                font-size: 18px;
+              "
+              class="font-inter"
+            >
+              <p>John Angelo Panganiban</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background-color: white">
+      <div
+        style="
+          padding: 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 15px;
+        "
+      >
+        <div><img src="../images/logo.png" style="width: 130px" /></div>
+        <div>
+          <p class="font-nunito footer-text-heading">COLLEGE OF INFORMATION TECHNOLOGY</p>
+          <p class="footer-text-title">Saint Ferdinand College</p>
+          <p class="font-nunito">Cabagan Isabela</p>
+        </div>
+      </div>
+
+      <div
+        class="d-flex w-full space-between items-center"
+        style="padding: 15px"
+      >
+        <p class="font-xs font-nunito">
+          © COPYRIGHT 2022 . SAINT FERDINAND COLLEGE
+        </p>
+        <p class="font-xs font-nunito">
+          POWERED BY: COLLEGE OF INFORMATION TECHNOLOGY
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/751a368fb6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let missionBtn = document.getElementById("mission-btn");
+      let visionBtn = document.getElementById("vision-btn");
+
+      let misionText = document.getElementById("mission");
+      let visionText = document.getElementById("vision");
+
+      missionBtn.addEventListener("click", () => {
+        let btnStatus = missionBtn.innerHTML;
+
+        if (btnStatus == "+") {
+          missionBtn.innerHTML = "-";
+          misionText.style.display = "flex";
+        } else {
+          missionBtn.innerHTML = "+";
+          misionText.style.display = "none";
+        }
+      });
+
+      visionBtn.addEventListener("click", () => {
+        let btnStatus = visionBtn.innerHTML;
+
+        if (btnStatus == "+") {
+          visionBtn.innerHTML = "-";
+          visionText.style.display = "flex";
+        } else {
+          visionBtn.innerHTML = "+";
+          visionText.style.display = "none";
+        }
+      });
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.backgroundColor = "#990000";
+        } else {
+          document.getElementById("navbar").style.backgroundColor =
+            "transparent";
+        }
+      }
+    </script>
+
+    <script>
+      const username = document.getElementById("username_input");
+      const password = document.getElementById("password_input");
+      const button_click = document.getElementById("button_click");
+
+      const redirect_link = document.getElementById("redirect_link");
+
+      button_click.addEventListener("click", () => {
+        if (
+          username.value === "sfc_username" &&
+          password.value == "sfc_password"
+        ) {
+          localStorage.setItem("is_login", Date.now());
+          window.location = redirect_link.href;
+        }
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+
+      import {
+        getDatabase,
+        ref,
+        get,
+        set,
+        update,
+        child,
+        onValue,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDz2GpKtG3MBJx8nw1vyuOFFudnR-I5mJI",
+        authDomain: "sfcwebsite.firebaseapp.com",
+        databaseURL:
+          "https://sfcwebsite-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "sfcwebsite",
+        storageBucket: "sfcwebsite.appspot.com",
+        messagingSenderId: "1069326236681",
+        appId: "1:1069326236681:web:039f6e583483dc642b4cd8",
+        measurementId: "G-Y7PZTNL5SK",
+      };
+
+      function makeid(length) {
+        var result = "";
+        var characters =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var charactersLength = characters.length;
+        for (var i = 0; i < length; i++) {
+          result += characters.charAt(
+            Math.floor(Math.random() * charactersLength)
+          );
+        }
+        return result;
+      }
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      const dbRef = ref(getDatabase());
+
+      const dFrag = document.createDocumentFragment();
+      let arr = [];
+
+      get(child(dbRef, `events`)).then((snapshot) => {
+
+      
+
+        const propertyNames = Object.entries(snapshot.val());
+
+        for (let index = 0; index < propertyNames.length; index++) {
+          const element = propertyNames[index];
+
+          const keys = Object.keys(element);
+
+
+          arr.push(element);
+         
+        }
+     
+
+ 
+
+         
+
+
+for (let index = 0; index < arr.length; index++) {
+ createCard(
+  arr[index][1].title,
+  arr[index][1].description,
+  arr[index][1].image_link,
+  arr[index][0]
+);
+
+
+}
+      
+
+        document.getElementById("myList").appendChild(dFrag);
+      });
+
+      const _id = makeid(12);
+
+      function createCard(_title, _description, image_link, btn_id) {
+        //image
+        const img = document.createElement("img");
+        img.src = image_link;
+
+        //card body
+
+        const card_body = document.createElement("div");
+
+        card_body.style = "padding:10px 15px";
+
+        //fonts
+
+        const card_text_title = document.createElement("p");
+        card_text_title.className = "font-sm font-nunito font-bold";
+        card_text_title.innerHTML = _title;
+
+        const card_text_subtitle = document.createElement("p");
+        card_text_subtitle.className = "font-sm font-nunito";
+
+        card_text_subtitle.innerHTML = _description;
+
+        card_body.appendChild(card_text_title);
+        card_body.appendChild(card_text_subtitle);
+
+        const li = document.createElement("div");
+        li.className = "card";
+
+        li.appendChild(img);
+
+        li.appendChild(card_body);
+
+        dFrag.appendChild(li);
+      }
+
+      const eventBtn = document.getElementById("event-btn");
+      const eventTitle = document.getElementById("event_title");
+      const eventDescription = document.getElementById("event_description");
+      const eventImage = document.getElementById("event_image");
+
+      eventBtn.addEventListener("click", () => {
+        let title = eventTitle.value;
+        let decription = eventDescription.value;
+        let image_link = eventImage.value;
+        if (title != "" && decription != "" && image_link != "") {
+          writeUserData(title, decription, image_link, _id);
+        } else {
+          alert("please complete the fields");
+        }
+      });
+    </script>
+
+    <script>
+
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const intersecting = entry.isIntersecting
+
+ 
+    entry.target.style.marginTop  = intersecting ? "0px" : "150px"
+  })
+
+  
+})
+
+observer.observe(document.getElementById("state-img"))
+
+
+
+
+const observerText = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const intersecting = entry.isIntersecting
+    entry.target.style.color  = intersecting ? "black" : "white"
+  })
+})
+
+observerText.observe(document.getElementById("about-text"))
+
+
+
+const observerAboutImg = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const intersecting = entry.isIntersecting
+    entry.target.style.transform  = intersecting ? "translateX(0%)" : "translateX(65%)"
+  })
+})
+
+observerAboutImg.observe(document.getElementById("about-img"))
+
+
+
+const observerStudents = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const intersecting = entry.isIntersecting
+    entry.target.style.transform  = intersecting ? "translateY(0)" : " translateY(50%)"
+  })
+})
+
+observerStudents.observe(document.getElementById("students-observe"))
+    </script>
+    </script>
+  </body>
+</html>
